@@ -11,18 +11,18 @@ public class Main {
     }
     public static void task1() {
         System.out.println("Задание №1");
-        int in = 1;
-        byte by = 2;
-        short sh = 3;
-        long lo = 4;
-        float fl = 5.0f;
-        double dou = 6.1;
-        System.out.println("Значение переменной i с типом int равно "+in);
-        System.out.println("Значение переменной b с типом byte равно "+by);
-        System.out.println("Значение переменной s с типом short равно "+sh);
-        System.out.println("Значение переменной l с типом long равно "+lo);
-        System.out.println("Значение переменной f с типом float равно "+fl);
-        System.out.println("Значение переменной d с типом double равно "+dou);
+        int i = 1;
+        byte b = 2;
+        short s = 3;
+        long l = 4;
+        float f = 5.0f;
+        double d = 6.1;
+        System.out.println("Значение переменной i с типом int равно "+i);
+        System.out.println("Значение переменной b с типом byte равно "+b);
+        System.out.println("Значение переменной s с типом short равно "+s);
+        System.out.println("Значение переменной l с типом long равно "+l);
+        System.out.println("Значение переменной f с типом float равно "+f);
+        System.out.println("Значение переменной d с типом double равно "+d);
 
     }
     public static void task2() {
@@ -57,16 +57,19 @@ public class Main {
         System.out.println("Задание №4");
         int productivityInMinute = 8;
         int time1 = 20;
-        int time2 = 24*60;
-        int time3 = time2 * 3;
-        int time4 = time2 * 30;
+        int time2InDays = 1;
+        int time2 = 24*60*time2InDays;
+        int time3InDays = 3;
+        int time3 = time2 * time3InDays;
+        int time4InDays = 30;
+        int time4 = time2 * time4InDays;
         int production1 = time1 * productivityInMinute;
         int production2 = time2 * productivityInMinute;
         int production3 = time3 * productivityInMinute;
         int production4 = time4 * productivityInMinute;
-        System.out.println("За 20 минут машина произвела " + production1 + " бутылок");
-        System.out.println("За сутки машина произвела " + production2 + " бутылок");
-        System.out.println("За 3 дня машина произвела " + production3 + " бутылок");
+        System.out.println("За " + time1 + " минут машина произвела " + production1 + " бутылок");
+        System.out.println("За " + time2InDays + " сутки машина произвела " + production2 + " бутылок");
+        System.out.println("За " + time3InDays + " дня машина произвела " + production3 + " бутылок");
         System.out.println("За месяц машина произвела " + production4 + " бутылок");
     }
     public static void task5(){
@@ -112,9 +115,9 @@ public class Main {
         int salaryForMasha = 67760;
         int salaryForDenis = 83690;
         int salaryForKris = 76230;
-        double newSalaryForMasha = salaryForMasha * 1.1;
-        double newSalaryForDenis = salaryForDenis * 1.1;
-        double newSalaryForKris = salaryForKris * 1.1;
+        double newSalaryForMasha = ((int) (salaryForMasha * 1.1 * 10)) * 0.1;
+        double newSalaryForDenis = ((int) (salaryForDenis * 1.1 * 10)) * 0.1;
+        double newSalaryForKris = ((int) (salaryForKris * 1.1 * 10)) * 0.1;
         double differenceForMasha = newSalaryForMasha * 12 - salaryForMasha * 12;
         double differenceForDenis = newSalaryForDenis * 12 - salaryForDenis * 12;
         double differenceForKris = newSalaryForKris * 12 - salaryForKris * 12;
